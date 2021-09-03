@@ -1,91 +1,87 @@
 body {
-    margin: auto;
-    background-color: #4facdb;
-    
+  margin: auto;
+  background-color: #4facdb;
+
 }
 
 #boucle {
-    width: 100%;
-    height: 45%;
-    bottom: 0;
-    position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  position: absolute;
 }
 
 #logo {
-    width: 27%;
-    margin-top: 39px;
-    margin-bottom: 42px;
+  width: 27%;
+  margin-top: 39px;
+  margin-bottom: 42px;
 }
 
 
 .containerTop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 
 p {
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    width: 100%;
-    margin: 0px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  margin: 0px;
 }
 
 #first {
-    animation-name: glissement;
-    animation-duration: 0.5s;
+  animation-name: glissement;
+  animation-duration: 0.5s;
 }
 
 #second {
-    animation-name: glissement;
-    animation-duration: 1s;
+  animation-name: glissement;
+  animation-duration: 1s;
 }
 
 #third {
-    animation-name: glissement;
-    animation-duration: 1.5s;
+  animation-name: glissement;
+  animation-duration: 1.5s;
 }
 
+.testGlissement {
+  animation-name: glissement;
+  animation-duration: 2s;
+}
 
+@keyframes glissement {
+  from {
+    margin-left: 200%;
 
-  @keyframes glissement {
-    from {
-      margin-left: 200%;
-      
-    }
-  
-    to {
-      margin-left: 0%;
-      
-    }
   }
 
-  .testGlissement {
-    animation-name: glissement;
-    animation-duration: 2s;
+  to {
+    margin-left: 0%;
+
+  }
+}
+
+.containerParagraphe {
+
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 1;
   }
 
-
-  .containerParagraphe { 
-   
-    animation: fadeInAnimation ease-out 0.5s; 
-    animation-delay: 3s;
-    
-    
-    
-   
-    
-    
-    animation-iteration-count: 1; 
-    } 
-    @keyframes fadeInAnimation { 
-    0% { 
-    opacity: 1; 
-    } 
-    100% { 
-    opacity: 0; 
-    } 
-    } 
+  100% {
+    opacity: 0;
+  }
+}
