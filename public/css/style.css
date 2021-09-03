@@ -85,3 +85,18 @@ p {
     opacity: 0;
   }
 }
+
+#logo {
+  
+  animation-name: example;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  to {
+    
+    transform: translate(-35vw, -5vh);
+   }
+}
