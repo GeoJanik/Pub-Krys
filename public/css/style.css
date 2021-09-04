@@ -15,15 +15,21 @@ body {
   width: 27%;
   margin-top: 39px;
   margin-bottom: 42px;
+  animation-name: animationLogo;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 
-.containerTop {
+#containerTop {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 }
+
 
 
 p {
@@ -45,18 +51,53 @@ p {
 }
 
 #third {
+  
+  animation-duration: 1.5s;
   animation-name: glissement;
+}
+
+#fourth{
+  animation-name: glissement;
+  animation-delay: 3.5s;
+  animation-duration: 0.5s;
+}
+
+#six {
+  animation-name: glissement;
+  animation-delay: 3.5s;
   animation-duration: 1.5s;
 }
 
-.testGlissement {
+#seven {
   animation-name: glissement;
+  animation-delay: 3.5s;
   animation-duration: 2s;
 }
+
+
+
+
+ 
+#containerParagraphe {
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-delay: 3s;
+   animation-fill-mode: forwards; 
+  animation-iteration-count: 1;
+} 
+
+#containerParagraphe2 {
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-delay: 6s;
+   animation-fill-mode: forwards; 
+  animation-iteration-count: 1;
+} 
+
+
 
 @keyframes glissement {
   from {
     margin-left: 200%;
+    
 
   }
 
@@ -65,17 +106,7 @@ p {
 
   }
 }
-
-.containerParagraphe {
-
-  animation: fadeInAnimation ease-in 0.5s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-
-
-}
-
+/* ICI ON ECOUTE EN JS LA FIN DE LOPACITE POUR CHANGER LE TEXT ET ON RELANCE LITERATION !!!!!!!!!!!!!!!!! */ 
 @keyframes fadeInAnimation {
   0% {
     opacity: 1;
@@ -86,17 +117,8 @@ p {
   }
 }
 
-#logo {
-  
-  animation-name: example;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes example {
+@keyframes animationLogo {
   to {
-    
-    transform: translate(-35vw, -5vh);
+    transform: translate(-35vw, -5vh) scale(0.7);
    }
 }
