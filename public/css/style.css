@@ -51,12 +51,13 @@ p {
 }
 
 #third {
-  
+
   animation-duration: 1.5s;
   animation-name: glissement;
 }
 
-#fourth{
+#fourth {
+
   animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 0.5s;
@@ -65,48 +66,168 @@ p {
 #six {
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
+
 }
 
 #seven {
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
+}
+
+#height {
+  animation-name: glissement;
+  animation-delay: 3.5s;
+  animation-duration: 1.7s;
+}
+
+
+
+#modalite {
+  position: relative;
+  top: -42px;
+  font-size: 10px;
+  animation: visibilityModalite;
+  animation-duration: 17s;
+  
+}
+
+
+#containerParagraphe {
+  position: relative;
+  bottom: 10%;
+  animation: fadeInAnimation ease-in 0.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#containerParagraphe2 {
+  position: relative;
+  width: 100%;
+  top: -170px;
+  animation: visibility;
+  animation-duration: 8s;
+  animation-fill-mode: forwards; 
 }
 
 
 
 
- 
-#containerParagraphe {
-  animation: fadeInAnimation ease-in 0.5s;
-  animation-delay: 3s;
-   animation-fill-mode: forwards; 
-  animation-iteration-count: 1;
-} 
+@keyframes visibility {
+  0% {
+    opacity: 0;
+  }
 
-#containerParagraphe2 {
-  animation: fadeInAnimation ease-in 0.5s;
-  animation-delay: 6s;
-   animation-fill-mode: forwards; 
-  animation-iteration-count: 1;
-} 
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes visibilityModalite {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 
 
 
 @keyframes glissement {
   from {
     margin-left: 200%;
-    
-
   }
 
   to {
     margin-left: 0%;
-
   }
 }
-/* ICI ON ECOUTE EN JS LA FIN DE LOPACITE POUR CHANGER LE TEXT ET ON RELANCE LITERATION !!!!!!!!!!!!!!!!! */ 
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 1;
@@ -120,5 +241,5 @@ p {
 @keyframes animationLogo {
   to {
     transform: translate(-35vw, -5vh) scale(0.7);
-   }
+  }
 }
