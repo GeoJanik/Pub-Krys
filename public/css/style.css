@@ -40,78 +40,98 @@ p {
   margin: 0px;
 }
 
-#first {
+#p1 {
   animation-name: glissement;
   animation-duration: 0.4s;
 }
 
-#second {
+#p2 {
   animation-name: glissement;
   animation-duration: 0.8s;
 }
 
-#third {
+#p3 {
 
   animation-duration: 1s;
   animation-name: glissement;
 }
 
-#fourth {
+#p4 {
 
   animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 0.4s;
 }
 
-#six {
+#p5 {
   animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 0.8s;
 
 }
 
-#seven {
+#p6 {
   animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 1s;
 }
 
-#height {
+#p7 {
   animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 1.3s;
 }
 
-#nine {
+#p8 {
   animation-name: glissement;
   animation-delay: 6.5s;
   animation-duration: 0.4s;
 }
 
-#ten {
+#p9 {
   animation-name: glissement;
   animation-delay: 6.5s;
   animation-duration: 0.8s;
 }
 
-#eleven {
+#p10 {
   animation-name: glissement;
   animation-delay: 6.5s;
   animation-duration: 1s;
 }
 
-#twelve {
+#p11 {
   animation-name: glissement;
   animation-delay: 6.5s;
   animation-duration: 1.3s;
 }
+
+#p12 {
+  animation-name: fadeInAnimation;
+  animation-duration: 11s;
+}
+
+#p13 {
+  animation-name: fadeInAnimation;
+  animation-duration: 11s;
+}
+
+#p14 {
+  animation-name: fadeInAnimation;
+  animation-duration: 11s;
+}
+
+
 
 #modalite {
   position: relative;
-  top: -146px;
-  font-size: 8px;
+  top: -239px;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 20px;
   animation: visibilityModalite;
-  animation-duration: 14s;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
 
 }
 
@@ -119,7 +139,7 @@ p {
 #containerParagraphe {
   position: relative;
   bottom: 10%;
-  animation: fadeInAnimation ease-in 0.5s;
+  animation: fadeOutAnimation ease-in 0.5s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -140,6 +160,11 @@ p {
   animation: visibilityParagraphe3;
   animation-duration: 11s;
   animation-fill-mode: forwards;
+}
+
+#containerParagraphe4 {
+  position: relative;
+  top: -363px;
 }
 
 @keyframes visibilityParagraphe3 {
@@ -195,6 +220,10 @@ p {
     opacity: 0;
   }
 }
+
+
+
+
 
 @keyframes visibility {
   0% {
@@ -309,7 +338,7 @@ p {
   }
 }
 
-@keyframes fadeInAnimation {
+@keyframes fadeOutAnimation {
   0% {
     opacity: 1;
   }
@@ -317,6 +346,53 @@ p {
   100% {
     opacity: 0;
   }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
 
 @keyframes animationLogo {
