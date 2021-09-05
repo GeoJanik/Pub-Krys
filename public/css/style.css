@@ -42,17 +42,17 @@ p {
 
 #first {
   animation-name: glissement;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
 }
 
 #second {
   animation-name: glissement;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 
 #third {
 
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: glissement;
 }
 
@@ -60,37 +60,59 @@ p {
 
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 0.5s;
+  animation-duration: 0.4s;
 }
 
 #six {
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 
 }
 
 #seven {
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 #height {
   animation-name: glissement;
   animation-delay: 3.5s;
-  animation-duration: 1.7s;
+  animation-duration: 1.3s;
 }
 
+#nine {
+  animation-name: glissement;
+  animation-delay: 6.5s;
+  animation-duration: 0.4s;
+}
 
+#ten {
+  animation-name: glissement;
+  animation-delay: 6.5s;
+  animation-duration: 0.8s;
+}
+
+#eleven {
+  animation-name: glissement;
+  animation-delay: 6.5s;
+  animation-duration: 1s;
+}
+
+#twelve {
+  animation-name: glissement;
+  animation-delay: 6.5s;
+  animation-duration: 1.3s;
+}
 
 #modalite {
   position: relative;
-  top: -42px;
-  font-size: 10px;
+  top: -146px;
+  font-size: 8px;
   animation: visibilityModalite;
-  animation-duration: 17s;
-  
+  animation-duration: 14s;
+
 }
 
 
@@ -109,11 +131,70 @@ p {
   top: -170px;
   animation: visibility;
   animation-duration: 8s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
+#containerParagraphe3 {
+  position: relative;
+  top: -235px;
+  animation: visibilityParagraphe3;
+  animation-duration: 11s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes visibilityParagraphe3 {
+  0% {
+    opacity: 0;
+  }
 
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 
 @keyframes visibility {
   0% {
@@ -141,7 +222,7 @@ p {
   }
 
   50% {
-    opacity: 0;
+    opacity: 1;
   }
 
   60% {
@@ -199,7 +280,7 @@ p {
   }
 
   70% {
-    opacity: 1;
+    opacity: 0;
   }
 
   80% {
