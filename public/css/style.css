@@ -123,6 +123,8 @@ p {
 
 
 
+
+
 #modalite {
   position: relative;
   top: -239px;
@@ -156,7 +158,7 @@ p {
 
 #containerParagraphe3 {
   position: relative;
-  top: -235px;
+  top: -275px;
   animation: visibilityParagraphe3;
   animation-duration: 11s;
   animation-fill-mode: forwards;
@@ -164,7 +166,7 @@ p {
 
 #containerParagraphe4 {
   position: relative;
-  top: -363px;
+  top: -380px;
 }
 
 @keyframes visibilityParagraphe3 {
