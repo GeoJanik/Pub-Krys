@@ -1,7 +1,6 @@
 body {
   margin: auto;
   background-color: #4facdb;
-
 }
 
 .bottom {
@@ -20,7 +19,6 @@ body {
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
-
 
 #containerTop {
   max-height: 100vh;
