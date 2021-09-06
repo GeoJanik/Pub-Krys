@@ -7,7 +7,7 @@ body {
 #boucle {
   width: 100%;
   height: 45%;
-  bottom: -29px;
+  bottom: 0px;
   position: absolute;
 }
 
@@ -23,6 +23,7 @@ body {
 
 
 #containerTop {
+  max-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,19 +31,18 @@ body {
   overflow: hidden;
 }
 
-
-
 p {
   color: white;
   text-align: center;
-  
   width: 100%;
   margin: 0px;
 }
 
- #p1 {
+/* MISE EN PAGE DE MES DIFFERENTSES BALISE DE MON HTML + ANIMATION */
 
-   font-size: 30px;
+#p1 {
+
+  font-size: 30px;
   animation-name: glissement;
   animation-duration: 0.4s;
 }
@@ -57,27 +57,25 @@ p {
   font-size: 30px;
   animation-duration: 1s;
   animation-name: glissement;
-} 
+}
 
 #p4 {
   font-size: 30px;
-  animation-name: glissement; 
+  animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 0.4s;
-  
 }
 
 #p5 {
   font-size: 30px;
-  animation-name: glissement; 
+  animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 0.8s;
   margin-bottom: 30px;
-
 }
 
 #p6 {
-  animation-name: glissement; 
+  animation-name: glissement;
   animation-delay: 3.5s;
   animation-duration: 1s;
 }
@@ -136,34 +134,22 @@ p {
 }
 
 button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #4facdb;
   width: 280px;
   margin-top: 47px;
   border: solid 1px white;
   color: white;
-  padding: 15px; 
+  padding: 15px;
   animation-name: fadeInAnimation;
   animation-duration: 11.2s;
-} 
-
-
-
-
-
-#modalite {
-  position: relative;
-  top: -456px;
-  font-size: 10px;
-  text-align: left;
-  margin-left: 20px;
-  animation: visibilityModalite;
-  animation-duration: 15s;
-  animation-fill-mode: forwards;
-
 }
 
+/* GERE ICI LES ANIMATION ET AFFICHAGES DE MES CONTAINERS PARAGRAPHES */
 
-#containerParagraphe {
+#containerParagraph {
   position: relative;
   bottom: 10%;
   animation: fadeOutAnimation ease-in 0.5s;
@@ -172,33 +158,107 @@ button {
   animation-iteration-count: 1;
 }
 
-#containerParagraphe2 {
+#containerParagraph2 {
   position: relative;
   width: 100%;
   top: -170px;
-  animation: visibility;
+  animation: visibilityParagraph2;
   animation-duration: 8s;
   animation-fill-mode: forwards;
 }
 
-#containerParagraphe3 {
+#containerParagraph3 {
   position: relative;
   top: -333px;
-  animation: visibilityParagraphe3;
+  animation: visibilityParagraph3;
   animation-duration: 11s;
   animation-fill-mode: forwards;
 }
 
-#containerParagraphe4 {
+#containerParagraph4 {
   position: relative;
   top: -512px;
 }
 
-.fas{
+#modalite {
+  position: relative;
+  bottom: 493px;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 20px;
+  animation: visibilityModalites;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+}
+
+.fas {
   font-size: 25px;
 }
 
-@keyframes visibilityParagraphe3 {
+/* KEYFRAMES DU PREMIER PARAGRAPHE POUR QU'IL DISPARAISSE */
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* KEYFRAMES DU PARAGRAPHE 2 POUR PASSAGE NON VISIBLE A VISIBLE */
+@keyframes visibilityParagraph2 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* KEYFRAMES DU PARAGRAPHE 3 POUR PASSAGE NON VISIBLE A VISIBLE */
+@keyframes visibilityParagraph3 {
   0% {
     opacity: 0;
   }
@@ -252,132 +312,7 @@ button {
   }
 }
 
-
-
-
-
-@keyframes visibility {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 0;
-  }
-
-  45% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  90% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes visibilityModalite {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  40% {
-    opacity: 1;
-  }
-
-  45% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0;
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  90% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
-
-@keyframes glissement {
-  from {
-    margin-left: 200%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes fadeOutAnimation {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
+/* KEYFRAMES DU PARAGRAPHE 4 POUR PASSAGE NON VISIBLE A VISIBLE APPLIQUER DIRECTEMENT AU BALISE p*/
 
 @keyframes fadeInAnimation {
   0% {
@@ -423,8 +358,73 @@ button {
   100% {
     opacity: 1;
   }
-
 }
+
+/* KEYFRAMES DES MODALITES POUR PASSAGE NON VISIBLE A VISIBLE APPLIQUER DIRECTEMENT AU BALISE p*/
+
+@keyframes visibilityModalites {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* KEYFRAMES POUR ANIMATION D'AFFICHAGE DES BALISE p DE DROITE A GAUCHE*/
+
+@keyframes glissement {
+  from {
+    margin-left: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+/* KEYFRAMES DE L'ANIMATION DU LOGO*/
 
 @keyframes animationLogo {
   to {
