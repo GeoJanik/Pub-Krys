@@ -12,19 +12,19 @@ class Carte {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
 
+        /* CREATION DU MARKER SUR LA MAP */
         const marker = L.marker([this.lattitudeMap, this.longitudeMap]);
-
         this.map.addLayer(marker);
     }
 }
 
-
+/* AFFICHAGE DE LA CARTE AU BOUT DE 10 SEC */
 function timerImg() {
-    setTimeout(changeImg, 3000);
+    setTimeout(displayMap, 10000);
 }
 
-
-function changeImg() {
+/* MASQUE IMAGE POUR AFFICHER LA CARTE */
+function displayMap() {
     const boucle = document.getElementById('boucle');
     const container = document.getElementById('containerBottom');
     container.removeChild(boucle);
